@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="./resources/style.css">
+ <meta name="author" content="A López">
+<title>Menu Generator</title>
+</head>
+<body onload="prueba1()">
+	<div class="carta">
+		<h1>Menú</h1>
+		<img alt="" src="img/sep1.png">
+		
+		<h2>Entrante</h2>
+		<img alt="" src="img/sep2.png">
+		<p id="resultado_entrantes"></p>
+<script>var entrantes = ['Tartar de atún','Tartar de Salmón','Cóctel de gambas','Crema de puerros', 'Crema de calabaza'];
+document.getElementById("resultado_entrantes").innerHTML = entrantes[Math.floor(Math.random() * entrantes.length)];
+</script>
+		<h2>Principal</h2>
+		<img alt="" src="img/sep2.png">
+			<p id="resultado_principales"></p>
+<script>var principales = ['Solomillo de cerdo con manzana','Pulpo a la gallega','Dorada a la sal','Rissotto de setas','Arroz con bogavante'];
+document.getElementById("resultado_principales").innerHTML = principales[Math.floor(Math.random() * principales.length)];
+</script>
+		<h2>Postre</h2>
+		<img alt="" src="img/sep2.png">
+		<p id="resultado_postres"></p>
+<script>var postres = ['Tarta de queso','Tarta de lima','Sorbete de mandarina','Volcán de chocolate','Helado de pistachos'];
+document.getElementById("resultado_postres").innerHTML = postres[Math.floor(Math.random() * postres.length)];
+</script>
+<br><br><br>
+		<button onclick="location.reload();">Probar otro menú</button>
+<br><br><br>
+
+	</div>
+
+
+
+
+
+</body>
+
+</html>
